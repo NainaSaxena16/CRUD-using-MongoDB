@@ -1,0 +1,21 @@
+<div class="container">
+
+<div class="form-group">
+    <h1>UPDATE EMPLOYEE</h1>
+    <form method="post" action="/emp/updateEmp">
+<input type="hidden" name="id" value="{{emp._id}}">
+<label>Name</label>
+<input type="text" class="form-control" placeholder="Enter your Name" name="name" value={{emp.name}}>
+<label>Email</label>
+<input type="email" class="form-control" placeholder="Enter your Email" name="email" value={{emp.email}}>
+<label>Password</label>
+<input type="password" class="form-control" placeholder="Enter your Password" name="pass" value={{emp.password}}>
+<label>City</label>
+<input type="text" class="form-control" placeholder="Enter your City" name="city" value={{emp.city}}>
+<label>Phone</label>
+<input type="text" class="form-control" placeholder="Enter your Phone Number" name="phone" value={{emp.mobile}}>
+
+<input type="submit" class="btn btn-primary" value="Update">
+</form>
+</div>
+</div>

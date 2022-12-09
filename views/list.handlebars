@@ -1,0 +1,28 @@
+<div class="container">
+    <h1 align="center">SHOW ALL EMPLOYEES</h1></hr><br>
+    <a href="/emp/createEmp">Add Employee</a>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Mobile</th>
+      <th scope="col">City</th>
+      <th scope="col">Password</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each employeeList}}
+    <tr class="table-dark">
+      <th scope="row">{{this.name}}</th>
+      <td>{{this.email}}</td>
+      <td>{{this.mobile}}</td>
+      <td>{{this.city}}</td>
+      <td>{{this.password}}</td>
+      <td><a href="delete/{{this._id}}" class="btn btn-danger">Delete</td>
+      <td><a href="update/{{this._id}}" class="btn btn-success">Update</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+</div>
